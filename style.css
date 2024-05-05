@@ -144,11 +144,10 @@ main h1 {
 .route__des {
     height: 500px;
     width: 100%;
-    position: absolute;
+   position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 9999;
     top: 0;
     padding: 0px 30px;
     gap: 20px;
@@ -156,10 +155,10 @@ main h1 {
 
 .route__des p span {
     background-color: white;
-    padding: 5px 20px;
-    font-weight: 700;
+    text-overflow: ellipsis;
+    font-weight: bold;
     border: none;
-    border-radius: 10px;
+    
 }
 
 .route__des h2 {
@@ -170,11 +169,18 @@ main h1 {
 
 .route__des button {
     border: none;
-    border-radius: 10px;
-    font-weight: bold;
-    color: black;
+    width: fit-content;
+    height: fit-content;
+font-weight: bold;
     background-color: rgb(125, 3, 125);
 }
+
+.route__des button:hover{
+
+    border-radius:10%;
+    
+}
+
 
 .section__head {
     display: flex;
@@ -307,13 +313,10 @@ main h1 {
     }
 
     .route1 img {
-        display: none;
+        margin-top: 200px;
+        height: 300px;
+    width: 100%;
     }
-
-    .route__des{
-        z-index: 1;
-    }
-
 
 
         .mob-Card{
